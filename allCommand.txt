@@ -29,11 +29,16 @@ cd kafka_2.12-2.2.1
 bin/kafka-topics.sh --create --topic {Topic Name} --bootstrap-server {Public Ip}:9092 --replication-factor 1 --partitions 1
 bin/kafka-topics.sh --list --bootstrap-server {Public Ip}:9092
 
+bin/kafka-topics.sh --list --bootstrap-server 3.6.161.155:9092
+
+bin/kafka-topics.sh --create --topic demo --bootstrap-server 3.6.161.155:9092 --replication-factor 1 --partitions 1
+bin/kafka-topics.sh --delete --topic demo --bootstrap-server 3.6.161.155:9092
 
 start the producer:---------------
 bin/kafka-console-producer.sh --topic {Topic Name} --broker-list {Public Ip}:9092
-
+bin/kafka-console-producer.sh --topic demo_topic --broker-list 3.6.161.155:9092
 
 start the consumer:-------------
 cd kafka_2.12-3.5.1
 bin/kafka-console-consumer.sh --topic {Topic Name} --from-beginning --bootstrap-server {Public Ip}:9092
+bin/kafka-console-consumer.sh --topic demo --from-beginning --bootstrap-server 3.6.161.155:9092
