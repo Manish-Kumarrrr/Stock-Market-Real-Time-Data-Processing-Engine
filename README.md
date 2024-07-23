@@ -41,7 +41,7 @@ The **Stock Market Real-Time Data Processing Engine** is designed to simulate 
     *   With Athena’s SQL-based querying, we extract valuable insights from the stock market data.
         
 
-For detailed setup commands and troubleshooting, please refer to the allCommand.txt file.
+For detailed setup commands and troubleshooting, please refer to the allCommand.txt file and their official docs.
 
 ## Special Thanks
 
